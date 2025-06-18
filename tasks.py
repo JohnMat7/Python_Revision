@@ -21,8 +21,9 @@ def add_tasks(task , task_time):
         }
     
     try:
-        with open ("tasks.json","w") as file:
+        with open ("tasks.json","r") as file:
             tasks = json.load(file)
+            print("Print Task inside try catch in tasks.py")
     except (FileNotFoundError , json.JSONDecodeError):
         tasks = []
         

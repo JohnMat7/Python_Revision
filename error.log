@@ -1,0 +1,65 @@
+2025-06-18 22:34:21,541 - ERROR - An error occurred
+Traceback (most recent call last):
+  File "/home/johnmat7/Desktop/backend_development/to_list_cli_app/main.py", line 33, in main
+    tasks.add_tasks(add_task,add_tasktime)
+  File "/home/johnmat7/Desktop/backend_development/to_list_cli_app/tasks.py", line 25, in add_tasks
+    tasks = json.load(file)
+  File "/usr/lib/python3.10/json/__init__.py", line 293, in load
+    return loads(fp.read(),
+io.UnsupportedOperation: not readable
+2025-06-18 22:37:15,103 - ERROR - An error occurred
+Traceback (most recent call last):
+  File "/home/johnmat7/Desktop/backend_development/to_list_cli_app/main.py", line 31, in main
+    add_tasktime = datetime.strptime(add_tasktime , "%H:%M").time()
+  File "/usr/lib/python3.10/_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.10/_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '450:00' does not match format '%H:%M'
+2025-06-18 22:38:06,625 - ERROR - An error occurred
+Traceback (most recent call last):
+  File "/home/johnmat7/Desktop/backend_development/to_list_cli_app/main.py", line 31, in main
+    add_tasktime = datetime.strptime(add_tasktime , "%H:%M").time()
+  File "/usr/lib/python3.10/_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.10/_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '123123' does not match format '%H:%M'
+2025-06-18 22:41:44,290 - ERROR - An error occurred
+Traceback (most recent call last):
+  File "/home/johnmat7/Desktop/backend_development/to_list_cli_app/main.py", line 31, in main
+    add_tasktime = datetime.strptime(add_tasktime , "%H:%M").time()
+  File "/usr/lib/python3.10/_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.10/_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '123132' does not match format '%H:%M'
+2025-06-18 22:43:05,331 - ERROR - An error occurred
+Traceback (most recent call last):
+  File "/home/johnmat7/Desktop/backend_development/to_list_cli_app/main.py", line 30, in main
+    add_tasktime = datetime.strptime(add_tasktime , "%H:%M").time()
+  File "/usr/lib/python3.10/_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.10/_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '122313' does not match format '%H:%M'
+2025-06-18 22:44:43,130 - ERROR - An error occurred
+Traceback (most recent call last):
+  File "/home/johnmat7/Desktop/backend_development/to_list_cli_app/main.py", line 30, in main
+    add_tasktime = datetime.strptime(add_tasktime , "%H:%M").time()
+  File "/usr/lib/python3.10/_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.10/_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '12132' does not match format '%H:%M'
+2025-06-18 22:44:43,130 - INFO - ****************************************************************************************************
+2025-06-18 22:45:03,346 - ERROR - An error occurred
+Traceback (most recent call last):
+  File "/home/johnmat7/Desktop/backend_development/to_list_cli_app/main.py", line 30, in main
+    add_tasktime = datetime.strptime(add_tasktime , "%H:%M").time()
+  File "/usr/lib/python3.10/_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.10/_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data 'adsadasd' does not match format '%H:%M'
+2025-06-18 22:45:03,347 - INFO - ****************************************************************************************************

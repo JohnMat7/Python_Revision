@@ -3,6 +3,10 @@ from datetime import datetime
 import tasks
 import logging
 
+logging.basicConfig(filename='error.log',
+                    filemode='a' , 
+                    format='%(asctime)s - %(levelname)s - %(message)s',level=logging.DEBUG)
+
 def star_marker():
     print("*"*100)
 
@@ -30,7 +34,8 @@ def main():
 
             except Exception as e:
                 print("Invalid time format! Please enter in HH:MM format")
-                logging.exception("Your ")
+                logging.error("An error occurred",exc_info=True)
+                logging.info("*"*100)
 
         elif choice == 2:
             star_marker()
