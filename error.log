@@ -63,3 +63,21 @@ Traceback (most recent call last):
     raise ValueError("time data %r does not match format %r" %
 ValueError: time data 'adsadasd' does not match format '%H:%M'
 2025-06-18 22:45:03,347 - INFO - ****************************************************************************************************
+2025-06-19 22:28:17,765 - ERROR - An error occurred
+Traceback (most recent call last):
+  File "/home/johnmat7/Desktop/backend_development/to_list_cli_app/main.py", line 30, in main
+    add_tasktime = datetime.strptime(add_tasktime , "%H:%M").time()
+  File "/usr/lib/python3.10/_strptime.py", line 568, in _strptime_datetime
+    tt, fraction, gmtoff_fraction = _strptime(data_string, format)
+  File "/usr/lib/python3.10/_strptime.py", line 349, in _strptime
+    raise ValueError("time data %r does not match format %r" %
+ValueError: time data '12313' does not match format '%H:%M'
+2025-06-19 22:28:17,794 - INFO - ****************************************************************************************************
+2025-06-19 22:54:39,169 - ERROR - An error occurred
+Traceback (most recent call last):
+  File "/home/johnmat7/Desktop/backend_development/to_list_cli_app/main.py", line 32, in main
+    tasks.add_tasks(add_task,add_tasktime)
+  File "/home/johnmat7/Desktop/backend_development/to_list_cli_app/tasks.py", line 31, in add_tasks
+    tasks.append(new_task)
+AttributeError: 'dict' object has no attribute 'append'
+2025-06-19 22:54:39,169 - INFO - ****************************************************************************************************

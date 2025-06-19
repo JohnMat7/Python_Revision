@@ -1,6 +1,10 @@
 import json
 from datetime import datetime
+import logging
 
+logging.basicConfig(filename='error.log',
+                    filemode='a' , 
+                    format='%(asctime)s - %(levelname)s - %(message)s',level=logging.DEBUG)
 
 
 def load_tasks():
@@ -23,8 +27,11 @@ def add_tasks(task , task_time):
     try:
         with open ("tasks.json","r") as file:
             tasks = json.load(file)
-            print("Print Task inside try catch in tasks.py")
-    except (FileNotFoundError , json.JSONDecodeError):
+            tasks.append(new_task)
+            print("Print Task inside try catch in tasks.py and task:")
+
+    except (FileNotFoundError , json.JSONDecodeError) as e:
+        logging.error("Error occured while loading tasks.json : %s",e)
         tasks = []
         
 
